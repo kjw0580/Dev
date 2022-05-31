@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math 객체의 함수</title>
+    <script>
+        console.log(Math.max(20, 10, 50, 87));
+        console.log(Math.min(20, 10, 50, 87));
+
+        //올림
+        console.log(Math.ceil(10.2)); // 11
+        //반올림
+        console.log(Math.round(10.2)); // 10
+        //제곱근
+        console.log(Math.sqrt(16)); // 4
+        //거듭제곱
+        console.log(Math.pow(3, 3))// //3의 3제곱
+        //절대값
+        console.log(Math.abs(-10)); //10
+        
+        console.log("===============");
+        //사용자의 함수
+        function myAbs(x){
+            if(x < 0){
+                return -x;
+            }else{
+                return x;
+            }
+        }
+
+        //거듭제곱 정의
+        function mypow(x, y){
+            let num = 1;
+            for(let i = 0; i < y; i++){
+                num *= x;
+            }
+            return num;
+        }
+
+        console.log(mypow(2, 3));
+
+        console.log("===============");
+        //절대값 호출
+        console.log(myAbs(10));
+        console.log(myAbs(-10));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
