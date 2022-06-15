@@ -5,8 +5,8 @@ $(document).ready( function() {
 
 	//fadeOut()에 시간 설정
 	function goHide(){
-		for(var i = 1; i <= 4; i++){
-			if(!isOver1[i] && !isOver2[0]){
+		for(var i = 0; i <= 3; i++){
+			if(!isOver1[i] && !isOver2[i]){
 				$(".gnb_depth2_" + (i+1)).fadeOut("fast");
 			}
 		}
@@ -25,10 +25,10 @@ $(document).ready( function() {
 		isOver1[0] = true;
 	}).mouseout(function(){
 		// $(".gnb_depth2_1").fadeOut("fast");
-		setTimeout(goHide, 300);  //0.5초
+		setTimeout(goHide);  //0.5초
 		isOver1[0] = false;
 	}).blur(function(){
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver1[0] = false;
 	});
 	//하위메뉴
@@ -37,10 +37,10 @@ $(document).ready( function() {
 	}).focus(function(){
 		isOver2[0] = true;
 	}).mouseout(function(){
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver2[0] = false;
 	}).blur(function(){
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver2[0] = false;
 	});
 
@@ -56,10 +56,10 @@ $(document).ready( function() {
 		isOver1[1] = true;
 	}).mouseout(function(){
 		//$(".gnb_depth2_2").fadeOut("fast");
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver1[1] = false;
 	}).blur(function(){
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver1[1] = false;
 	});
 	//하위메뉴
@@ -68,10 +68,10 @@ $(document).ready( function() {
 	}).focus(function(){
 		isOver2[1] = true;
 	}).mouseout(function(){
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver2[1] = false;
 	}).blur(function(){
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver2[1] = false;
 	});
 
@@ -87,10 +87,10 @@ $(document).ready( function() {
 		isOver2[2] = true;
 	}).mouseout(function(){
 		//$(".gnb_depth2_3").fadeOut("fast");
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver2[2] = false;
 	}).blur(function(){
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver2[2] = false;
 	});
 	//하위메뉴
@@ -99,10 +99,10 @@ $(document).ready( function() {
 	}).focus(function(){
 		isOver2[2] = true;
 	}).mouseout(function(){
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver2[2] = false;
 	}).blur(function(){
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver2[2] = false;
 	});
 
@@ -118,10 +118,10 @@ $(document).ready( function() {
 		isOver2[3] = true;
 	}).mouseout(function(){
 		//$(".gnb_depth2_4").fadeOut("fast");
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver2[3] = false;
 	}).blur(function(){
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver2[3] = false;
 	});	
 	//하위메뉴
@@ -130,10 +130,10 @@ $(document).ready( function() {
 	}).focus(function(){
 		isOver2[3] = true;
 	}).mouseout(function(){
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver2[3] = false;
 	}).blur(function(){
-		setTimeout(goHide, 300);
+		setTimeout(goHide);
 		isOver2[3] = false;
 	});		
 
